@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:100%;
+    overflow-x:hidden;
+    }
+    
+
+:root{
+ --primary-color:  whitesmoke;
+ --secondary-color: #0c0c0c;
+
+
+
+}
+
+.dark__theme{
+    --primary-color:  #0c0c0c;
+    --secondary-color: #f5f5f5;
+}
+
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: relative;
+ 
+}
+
+nav{
+    width: 90%;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+  font-size: 30px;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+    color: #FE4C2C;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    color: var(--secondary-color);
+    font-size: 19px;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav ul li:hover{
+    color: #FE4C2C;
+}
+
+.info{
+    margin-left: 63px;
+    margin-top: 140px;
+    
+        width: 50%;
+    
+}
+
+
+.info h1{
+   color: var(--secondary-color);
+   font-size: 60px;
+   margin-bottom: 20px;
+   font-family: 'Noto Sans', sans-serif;
+   font-weight: bold;
+
+}
+.info h1 span{
+    color: #FE4C2C;
+
+}
+
+.info p{
+    color: var(--secondary-color);
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 22px;
+}
+
+.info a{
+    padding: 10px 19px;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 30px 0;
+color: var(--primary-color);
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 5px;
+  
+}
+
+.info a:hover{
+  background-color:  #FE4C2C;
+  color: var(--secondary-color); 
+}
+
+
+.image__box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+
+}
+.image__box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-40%);
+    transition:all 1s ;
+    -webkit-transition:all 1s ;
+    -moz-transition:all 1s ;
+    -ms-transition:all 1s ;
+    -o-transition:all 1s ;
+}
+
+.image__box:hover .pattern{
+    bottom:40px;
+
+}
+
+.image__box:hover .girl{
+    left:57%;
+}
+
+
+
+.social__media{
+    margin-left: 63px;
+}
+
+.social__media a{
+    font-size: 25px;
+}
+
+.social__media .fab{
+margin-top: 30px;
+color: var(--secondary-color);
+margin-right:20px;
+}
+
+
+.social__media .fab:hover{
+    color: #FE4C2C;
+}
+
+/* dark mode  */
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+
+}
+
+
+
+nav ul{
+   margin-left: auto;
+   flex-wrap: wrap;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+
+
+

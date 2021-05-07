@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ava Blossom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="hero">
+
+
+
+
+        <nav>
+
+            <h3 class="logo"> <sup>A</sup>v<sup>A</sup> </h3>
+
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+
+            <ul class="nav_list">
+                <li>Home</li>
+                <li>About</li>
+                <li>Portfolio</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+
+
+
+
+            <img src="img/moon.png" alt="" id="icon">
+
+        </nav>
+
+
+        <!-- end of nav  -->
+
+        <div class="info">
+
+            <h1>AVA<span> BLOSSOM</span></h1>
+            <p>Hi,this is Ava Blossom. I am a professional web developer. This is my official portolio to
+                showcase my works.</p>
+
+            <a href="">Download CV</a>
+
+        </div>
+
+        <div class="image__box">
+            <img src="img/pattern.png" alt="" class="pattern">
+            <img src="img/girl.png" alt="" class="girl">
+        </div>
+
+        <div class="social__media">
+
+
+            <a href="#"> <i class="fab fa-facebook"></i></a>
+            <a href="#"> <i class="fab fa-instagram-square"></i></a>
+            <a href="#"> <i class="fab fa-linkedin"></i></a>
+            <a href="#"> <i class="fab fa-behance"></i></a>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        var icon = document.querySelector("#icon");
+
+        icon.addEventListener("click", function () {
+
+            document.querySelector("body").classList.toggle("dark__theme");
+
+            if (document.querySelector("body").classList.contains("dark__theme")) {
+                icon.src = "./img/sun.png";
+            } else {
+                icon.src = "./img/moon.png";
+            }
+
+        });
+
+
+
+        let navClick = document.querySelector(".hamburger");
+
+        let navList = document.querySelector(".nav_list");
+
+
+        navClick.addEventListener("click", function () {
+
+
+            navList.classList.toggle("showMenu");
+
+        })
+    </script>
+</body>
+
+</html>
